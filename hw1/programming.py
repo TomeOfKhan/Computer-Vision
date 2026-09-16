@@ -135,7 +135,7 @@ def walkthrough3():
     Fill in code marked with ...
     """
     # Load the image "van-gogh.png"
-    img = utils.imread(utils.get_data_path(...))  # TODO
+    img = utils.imread(utils.get_data_path("van-gogh.png"))  # TODO
 
     # Note the image is a uint8 type and the maximum pixel value is 255
     print("img.dtype:", img.dtype)
@@ -164,8 +164,18 @@ def walkthrough3():
 
     # Similarly extract green_channel and blue_channel and create green_image
     # and blue_image
-    green_img = ...  # TODO
-    blue_img = ...  # TODO
+    green_channel = img[:, :, 1]
+    utils.imshow(red_channel, title="Green Channel")
+    green_img = np.zeros(img.shape)
+    green_img[:, :, 1] = green_channel
+    utils.imshow(green_img, title="Green Image")
+
+    blue_channel = img[:, :, 0]
+    utils.imshow(blue_channel, title="Blue Channel")
+    blue_img = np.zeros(img.shape)
+    blue_img[:, :, 0] = blue_channel
+    utils.imshow(blue_img, title="Blue Image")
+     # TODO
 
     # Create a 1x4 image collage in the following format:
     # original image | red channel | green channel | blue channel
@@ -176,11 +186,14 @@ def walkthrough3():
     #
     # original image | red channel
     # green channel  | blue channel
-    collage_2x2 = ...  # TODO
+
+    top_row = np.concatenate((img,red_img), axis=1)
+    bottom_row = np.concatenate((green_img,blue_img), axis=1)
+    collage_2x2 = np.concatenate((top_row,bottom_row), axis=0)  # TODO
     utils.imshow(collage_2x2, title="2x2 Collage")
 
     # Save the collage as "collage.png"
-    utils.imwrite(utils.get_result_path(...), collage_2x2)  # TODO
+    utils.imwrite(utils.get_result_path("collage.png"), collage_2x2)  # TODO
 
 
 # --------------------------------------------------------------------------
@@ -192,7 +205,7 @@ def walkthrough4():
     Fill in code marked with ...
     """
     # Load the image "I_Love_New_York.png"
-    img_ilnyc = utils.imread(...)  # TODO
+    img_ilnyc = utils.imread(utils.get_data_path("I_Love_New_York.png"))  # TODO
     utils.imshow(img_ilnyc, "Original Image")
 
     # Convert to grayscale
@@ -200,15 +213,15 @@ def walkthrough4():
     utils.imshow(img_ilnyc_gray, "Gray Scale")
 
     # Convert the image into a binary mask using a threshold value
-    threshold = ...  # TODO
+    threshold = 0.5  # TODO
     binary_mask = (img_ilnyc_gray > threshold).astype(np.uint8) * 255
 
     # Load the image "nyc.png"
-    img_nyc = utils.imread(...)  # TODO
+    img_nyc = utils.imread(utils.get_data_path("nyc.png"))  # TODO
 
     # Resize the nyc.png image so that its height is 500 pixels
-    height = ...  # TODO
-    width = ...  # TODO
+    height = img_nyc.shape[0]  # TODO
+    width = img_nyc.shape[1]  # TODO
     scale = 500 / height
     small_nyc = cv2.resize(img_nyc, (int(width * scale), int(height * scale)))
 
@@ -245,7 +258,14 @@ def walkthrough4():
     utils.imshow(padded_mask.astype(np.uint8) * 255, title="Pad left and right")
 
     # Pad the top and bottom sides
-    padded_mask = ...  # TODO
+    padded_mask = np.concatenate(
+        (
+            np.zeros((height_diff//2, padded_mask.shape[1]), dtype=np.bool_),
+            padded_mask,
+            np.zeros((height_diff//2, padded_mask.shape[1]), dtype=np.bool_),
+        ),
+        axis=0,
+    )  # TODO
     utils.imshow(padded_mask.astype(np.uint8) * 255, title="Pad top and bottom")
 
     """
@@ -263,13 +283,20 @@ def walkthrough4():
     love_small_nyc = small_nyc.copy()
     # Set the red channel
     # The color channels are in BGR order, so red is the last channel
+
+
     red_channel = love_small_nyc[:, :, 2]
     red_channel[padded_mask] = 255
 
-    love_small_nyc[:, :, 0] = ...  # TODO: Set the blue channel
-    love_small_nyc[:, :, 1] = ...  # TODO: Set the green channel
+    blue_channel = love_small_nyc[:, :, 0]
+    blue_channel[padded_mask] = 0  # TODO: Set the blue channel
+
+    green_channel = love_small_nyc[:, :, 1]
+    green_channel[padded_mask] = 0  # TODO: Set the green channel
 
     utils.imshow(love_small_nyc)
 
     # Save the collage as output_nyc.png
-    utils.imwrite(...)  # TODO
+    utils.imwrite(utils.get_result_path("output_nyc.png"), love_small_nyc)  # TODO
+
+    
