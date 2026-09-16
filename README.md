@@ -23,7 +23,7 @@ Homework 1 introduces:
 - Separating BGR color channels and composing image collages
 - Creating binary masks and applying an image overlay
 
-The first two walkthroughs are runnable examples. Walkthroughs 3 and 4 contain `TODO` placeholders intended to be completed as coursework.
+All four walkthroughs are implemented. Some `TODO` comments from the starter template remain as markers for the original exercise locations.
 
 ## Requirements
 
@@ -67,5 +67,5 @@ The image-based walkthroughs open Matplotlib windows. Generated files are writte
 
 - [x] Walkthrough 1: Basic NumPy
 - [x] Walkthrough 2: Basic image operations
-- [ ] Walkthrough 3: Van Gogh collage
-- [ ] Walkthrough 4: I Love New York overlay
+- [x] Walkthrough 3: Van Gogh collage
+- [x] Walkthrough 4: I Love New York overlay
