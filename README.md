@@ -69,3 +69,11 @@ The image-based walkthroughs open Matplotlib windows. Generated files are writte
 - [x] Walkthrough 2: Basic image operations
 - [x] Walkthrough 3: Van Gogh collage
 - [x] Walkthrough 4: I Love New York overlay
+
+## Homework 3: Image mosaicking
+
+The completed [HW3 implementation](hw3/programming.py) includes homography estimation, backward warping, RANSAC, feather blending, and panorama stitching. [Instructions and validation](hw3/README.md), [result images](hw3/results/), and the [submission archive](hw3/hw3_zk2335.zip) are included.
+
+Run from `hw3/` with `python runHW.py --run_all`. SciPy is required in addition to the dependencies above.
+
+![Camera panorama](hw3/results/1f.png)

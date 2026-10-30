@@ -19,3 +19,8 @@ Thumbs.db
 hw*/results/*
 !hw*/results/.gitkeep
 
+
+# Keep completed HW3 results and required camera inputs in the repository.
+!hw3/results/*
+!hw3/results/challenge_1f_input/
+!hw3/results/challenge_1f_input/*
