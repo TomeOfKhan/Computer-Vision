@@ -1,0 +1,58 @@
+challenge1a
+'stty' is not recognized as an internal or external command,
+operable program or batch file.
+==============================
+C:\Users\micha\Documents\Codex\2026-10-14\do\work\hw3_starter\hw3\utils.py:460: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+C:\Users\micha\Documents\Codex\2026-10-14\do\work\hw3_starter\hw3\runHW.py:88: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+'stty' is not recognized as an internal or external command,
+operable program or batch file.
+==============================
+
+challenge1b
+'stty' is not recognized as an internal or external command,
+operable program or batch file.
+==============================
+C:\Users\micha\Documents\Codex\2026-10-14\do\work\hw3_starter\hw3\utils.py:129: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+'stty' is not recognized as an internal or external command,
+operable program or batch file.
+==============================
+
+challenge1c
+'stty' is not recognized as an internal or external command,
+operable program or batch file.
+==============================
+C:\Users\micha\Documents\Codex\2026-10-14\do\work\hw3_starter\hw3\runHW.py:141: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+C:\Users\micha\Documents\Codex\2026-10-14\do\work\hw3_starter\hw3\runHW.py:162: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+'stty' is not recognized as an internal or external command,
+operable program or batch file.
+==============================
+
+challenge1d
+'stty' is not recognized as an internal or external command,
+operable program or batch file.
+==============================
+'stty' is not recognized as an internal or external command,
+operable program or batch file.
+==============================
+
+challenge1e
+'stty' is not recognized as an internal or external command,
+operable program or batch file.
+==============================
+'stty' is not recognized as an internal or external command,
+operable program or batch file.
+==============================
+
+challenge1f
+'stty' is not recognized as an internal or external command,
+operable program or batch file.
+==============================
+'stty' is not recognized as an internal or external command,
+operable program or batch file.
+==============================
+

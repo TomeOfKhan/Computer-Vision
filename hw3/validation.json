@@ -1,0 +1,35 @@
+{
+  "status": "All parts A-F completed; full runner passed",
+  "sift_matches": 2267,
+  "ransac_inliers": 1964,
+  "median_inlier_error_pixels": 0.9976529026943939,
+  "max_inlier_error_pixels": 4.945021483090989,
+  "outputs": [
+    "1a.png",
+    "1b.png",
+    "1c_after-ransac.png",
+    "1c_before-ransac.png",
+    "1d_blend.png",
+    "1d_overlay.png",
+    "1e.png",
+    "1f.png"
+  ],
+  "part_f": {
+    "inputs": [
+      "01.jpg",
+      "02.jpg",
+      "03.jpg"
+    ],
+    "reference": "02.jpg",
+    "stitch_order": [
+      "02.jpg",
+      "01.jpg",
+      "03.jpg"
+    ],
+    "panorama_size": [
+      1621,
+      1144
+    ],
+    "notes": "Black projective canvas borders; minor moving-traffic ghosting."
+  }
+}

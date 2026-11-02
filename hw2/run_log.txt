@@ -1,0 +1,91 @@
+walkthrough1
+'stty' is not recognized as an internal or external command,
+operable program or batch file.
+==============================
+C:\Users\micha\Documents\Codex\2026-10-14\do\work\starter\hw2\programming.py:53: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+C:\Users\micha\Documents\Codex\2026-10-14\do\work\starter\hw2\programming.py:99: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+'stty' is not recognized as an internal or external command,
+operable program or batch file.
+==============================
+
+challenge1a
+'stty' is not recognized as an internal or external command,
+operable program or batch file.
+==============================
+C:\Users\micha\Documents\Codex\2026-10-14\do\work\starter\hw2\utils.py:130: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+'stty' is not recognized as an internal or external command,
+operable program or batch file.
+==============================
+
+challenge1b
+'stty' is not recognized as an internal or external command,
+operable program or batch file.
+==============================
+'stty' is not recognized as an internal or external command,
+operable program or batch file.
+==============================
+
+challenge1c
+'stty' is not recognized as an internal or external command,
+operable program or batch file.
+==============================
+'stty' is not recognized as an internal or external command,
+operable program or batch file.
+==============================
+
+challenge2a
+'stty' is not recognized as an internal or external command,
+operable program or batch file.
+==============================
+Number of coins:  3
+Coin  1
+Center (x,y): (1567, 800)
+Radius: 111.40017953306898
+C:\Users\micha\Documents\Codex\2026-10-14\do\work\starter\hw2\utils.py:224: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+Coin  2
+Center (x,y): (1038, 808)
+Radius: 98.59513172565875
+Coin  3
+Center (x,y): (523, 816)
+Radius: 81.83520025025906
+{81: {'name': 'dime', 'value': 10, 'color': (255, 0, 0)}, 98: {'name': 'nickel', 'value': 5, 'color': (0, 255, 0)}, 111: {'name': 'quarter', 'value': 25, 'color': (0, 0, 255)}}
+'stty' is not recognized as an internal or external command,
+operable program or batch file.
+==============================
+
+challenge2b
+'stty' is not recognized as an internal or external command,
+operable program or batch file.
+==============================
+Total value detected: $2.05
+Actual total value: $2.05
+'stty' is not recognized as an internal or external command,
+operable program or batch file.
+==============================
+
+challenge2c
+'stty' is not recognized as an internal or external command,
+operable program or batch file.
+==============================
+Total value detected: $2.9
+Actual total value: $2.9
+'stty' is not recognized as an internal or external command,
+operable program or batch file.
+==============================
+
+challenge2d
+'stty' is not recognized as an internal or external command,
+operable program or batch file.
+==============================
+Total value detected: $2.9
+Actual total value: $2.9
+C:\Users\micha\Documents\Codex\2026-10-14\do\work\starter\hw2\utils.py:121: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`). Consider using `matplotlib.pyplot.close()`.
+  plt.figure()
+'stty' is not recognized as an internal or external command,
+operable program or batch file.
+==============================
+
