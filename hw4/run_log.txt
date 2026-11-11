@@ -1,0 +1,148 @@
+challenge1a
+'stty' is not recognized as an internal or external command,
+operable program or batch file.
+==============================
+sphere center = (239.50418543625628, 239.50429914716815)
+sphere radius = 190.7636698587073
+'stty' is not recognized as an internal or external command,
+operable program or batch file.
+==============================
+
+challenge1b
+'stty' is not recognized as an internal or external command,
+operable program or batch file.
+==============================
+sphere light_dirs_5x3 = 
+[[  -0.6304    0.0219 -216.9991]
+ [  48.4913  -84.2689 -194.0009]
+ [ -74.2333  -42.8247 -172.9291]
+ [ -46.9187   81.5388 -189.9844]
+ [  88.0247   51.1129 -205.1344]]
+'stty' is not recognized as an internal or external command,
+operable program or batch file.
+==============================
+
+challenge1c
+'stty' is not recognized as an internal or external command,
+operable program or batch file.
+==============================
+'stty' is not recognized as an internal or external command,
+operable program or batch file.
+==============================
+
+challenge1d
+'stty' is not recognized as an internal or external command,
+operable program or batch file.
+==============================
+'stty' is not recognized as an internal or external command,
+operable program or batch file.
+==============================
+
+demo_surface_reconstruction
+'stty' is not recognized as an internal or external command,
+operable program or batch file.
+==============================
+'stty' is not recognized as an internal or external command,
+operable program or batch file.
+==============================
+
+challenge1e
+'stty' is not recognized as an internal or external command,
+operable program or batch file.
+==============================
+Step: 4/360
+Step: 8/360
+Step: 12/360
+Step: 16/360
+Step: 20/360
+Step: 24/360
+Step: 28/360
+Step: 32/360
+Step: 36/360
+Step: 40/360
+Step: 44/360
+Step: 48/360
+Step: 52/360
+Step: 56/360
+Step: 60/360
+Step: 64/360
+Step: 68/360
+Step: 72/360
+Step: 76/360
+Step: 80/360
+Step: 84/360
+Step: 88/360
+Step: 92/360
+Step: 96/360
+Step: 100/360
+Step: 104/360
+Step: 108/360
+Step: 112/360
+Step: 116/360
+Step: 120/360
+Step: 124/360
+Step: 128/360
+Step: 132/360
+Step: 136/360
+Step: 140/360
+Step: 144/360
+Step: 148/360
+Step: 152/360
+Step: 156/360
+Step: 160/360
+Step: 164/360
+Step: 168/360
+Step: 172/360
+Step: 176/360
+Step: 180/360
+Step: 184/360
+Step: 188/360
+Step: 192/360
+Step: 196/360
+Step: 200/360
+Step: 204/360
+Step: 208/360
+Step: 212/360
+Step: 216/360
+Step: 220/360
+Step: 224/360
+Step: 228/360
+Step: 232/360
+Step: 236/360
+Step: 240/360
+Step: 244/360
+Step: 248/360
+Step: 252/360
+Step: 256/360
+Step: 260/360
+Step: 264/360
+Step: 268/360
+Step: 272/360
+Step: 276/360
+Step: 280/360
+Step: 284/360
+Step: 288/360
+Step: 292/360
+Step: 296/360
+Step: 300/360
+Step: 304/360
+Step: 308/360
+Step: 312/360
+Step: 316/360
+Step: 320/360
+Step: 324/360
+Step: 328/360
+Step: 332/360
+Step: 336/360
+Step: 340/360
+Step: 344/360
+Step: 348/360
+Step: 352/360
+Step: 356/360
+Step: 360/360
+
+Saving...
+'stty' is not recognized as an internal or external command,
+operable program or batch file.
+==============================
+

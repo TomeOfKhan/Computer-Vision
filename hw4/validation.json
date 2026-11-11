@@ -1,0 +1,36 @@
+{
+  "checks": [
+    "sphere centroid, area radius, and empty-input return",
+    "foreground requires above-threshold evidence in at least three images",
+    "unequal-intensity least squares, cast-shadow exclusion, unit normals, albedo scaling, and camera-facing background",
+    "Lambertian 1/pi factor, inverse-square falloff, negative-dot clamping, black background, and uint8 output",
+    "all five original signatures/docstrings preserved, no extra functions or forbidden libraries, unchanged starter runner/helpers"
+  ],
+  "status": "passed",
+  "sphere_center_xy": [
+    239.50418543625628,
+    239.50429914716815
+  ],
+  "sphere_radius_pixels": 190.7636698587073,
+  "light_magnitudes": [
+    217.00000000000003,
+    216.99999999999997,
+    193.0,
+    212.0,
+    229.0
+  ],
+  "sphere_interior_median_normal_error_degrees": 1.0787624396583433,
+  "sphere_interior_95percent_normal_error_degrees": 1.5201714175246457,
+  "vase_foreground_pixels": 84641,
+  "orbit_gif_frames": 90,
+  "full_runner": "passed with noninteractive display-only callbacks; starter files unchanged",
+  "results": [
+    "light_dirs.npz",
+    "normals.npz",
+    "orbit_relighting.gif",
+    "sphere_properties.npz",
+    "vase_albedo.png",
+    "vase_mask.png",
+    "vase_normal_map.png"
+  ]
+}

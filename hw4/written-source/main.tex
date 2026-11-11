@@ -1,0 +1,45 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{8pt}
+\begin{document}
+\begin{center}
+{\Large Computer Vision: Homework 4}\\[4pt]
+{\large Written Assignment --- Problem 1}\\[4pt]
+UNI: zk2335
+\end{center}
+Let $\mathbf n$ be a unit outward surface normal, and let $\mathbf s_1$ and $\mathbf s_2$ be unit vectors pointing from the surface toward the two distant light sources. Write their nonnegative intensities as $I_1,I_2$ and the Lambertian albedo as $\rho$. We consider points visible to both sources, so $\mathbf n\cdot\mathbf s_i\geq0$ and neither source contribution is removed by shadow clamping.
+
+By linear superposition, the outgoing Lambertian radiance is
+\begin{align*}
+L(\mathbf n)
+&=\frac{\rho}{\pi}\bigl(I_1\,\mathbf n\cdot\mathbf s_1+I_2\,\mathbf n\cdot\mathbf s_2\bigr)\\
+&=\frac{\rho}{\pi}\,\mathbf n\cdot\underbrace{(I_1\mathbf s_1+I_2\mathbf s_2)}_{\mathbf v}.
+\end{align*}
+The same vector $\mathbf v$ applies to every such surface normal because the sources are distant. Thus a single effective source reproduces the illumination whenever
+\[
+I_3\mathbf s_3=\mathbf v.
+\]
+For $\mathbf v\neq\mathbf0$, its direction and intensity are therefore
+\[
+\boxed{\displaystyle \mathbf s_3=\frac{I_1\mathbf s_1+I_2\mathbf s_2}{\|I_1\mathbf s_1+I_2\mathbf s_2\|}},
+\qquad
+\boxed{\displaystyle I_3=\|I_1\mathbf s_1+I_2\mathbf s_2\|}.
+\]
+If $\theta$ is the angle between the two source directions, then
+\[
+I_3=\sqrt{I_1^2+I_2^2+2I_1I_2\cos\theta}.
+\]
+This intensity is the magnitude of the intensity-weighted vector sum; it is generally smaller than $I_1+I_2$.
+
+\textbf{Equal intensities.} Setting $I_1=I_2=I$ gives
+\[
+\boxed{\displaystyle \mathbf s_3=\frac{\mathbf s_1+\mathbf s_2}{\|\mathbf s_1+\mathbf s_2\|}},
+\qquad
+\boxed{\displaystyle I_3=2I\cos(\theta/2)},\quad 0\leq\theta<\pi.
+\]
+Indeed, $\|\mathbf s_1+\mathbf s_2\|^2=2+2\cos\theta=4\cos^2(\theta/2)$. The effective direction is the internal angular bisector, so $\mathbf s_3$ makes an angle $\theta/2$ with each original direction. For unequal intensities, the weighted resultant points closer to the stronger source.
+
+\textbf{Degenerate case and scope.} If $\mathbf v=\mathbf0$, take $I_3=0$ and leave its direction arbitrary. In particular, equal, opposite source directions have no normal strictly illuminated by both; normals tangent to both receive zero radiance. Outside the common illuminated region, the separate terms $\max(0,\mathbf n\cdot\mathbf s_i)$ need not equal a single clamped resultant, so the equivalence is asserted only on the region in the question.
+\end{document}
