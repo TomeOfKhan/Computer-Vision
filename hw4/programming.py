@@ -61,20 +61,29 @@ def compute_light_directions(
         if peak <= 0:
             continue
         y, x = np.nonzero(inside & (gray == peak))
-        # Quantization can produce a plateau: its centroid estimates the peak.
+
         nx = (x.mean()-center[0]) / radius
         ny = (y.mean()-center[1]) / radius
-        # (x-cx)^2+(y-cy)^2+z^2=R^2, and the outward normal is
-        # (x-cx,y-cy,z)/R. Image x points right and y points down, so
-        # right-handed +z points into the scene; the visible hemisphere
-        # has z=-sqrt(R^2-(x-cx)^2-(y-cy)^2).
+
+
+
+
+        # The sphere satisfies (x-cx)^2+(y-cy)^2+z^2=R^2. Its outward
+        # unit normal is (x-cx,y-cy,z)/R. With image x right and y down,
+        # right-handed +z points into the scene, so the visible hemisphere
+        # uses z=-sqrt(R^2-(x-cx)^2-(y-cy)^2).
         normal = np.array([nx, ny, -np.sqrt(max(0.0, 1-nx*nx-ny*ny))])
         normal /= np.linalg.norm(normal)
-        # Lambertian brightness is proportional to max(0,n dot s).
-        # Its maximum occurs at n=s for a unit light direction. There is
-        # no specular term, so the diffuse peak gives the light direction.
-        # The peak brightness supplies its magnitude, retaining unequal
-        # source intensities rather than normalizing every source equally.
+
+
+
+
+
+        # For a Lambertian sphere, brightness is proportional to
+        # max(0,n dot s), which is greatest when the unit normal n equals
+        # the light direction s. No specular component shifts this peak.
+        # Scale that direction by the peak brightness to retain the
+        # intensity of each source, rather than assuming equal intensities.
         light_dirs[i] = peak * normal
     return light_dirs
 
@@ -130,9 +139,9 @@ def compute_normals(
     insufficient = np.flatnonzero(selected.sum(axis=0) < 3)
     for column in insufficient:
         selected[np.argsort(intensities[:, column])[-3:], column] = True
-    # Solve I=Sg with g=rho*n. Use all sufficiently illuminated sources
-    # (at least the brightest three) and keep their calibrated magnitudes.
-    # Group equal lighting subsets to solve many pixels together.
+
+
+
     subsets = np.sum(selected * (1 << np.arange(len(imgs)))[:, None], axis=0)
     g = np.zeros((3, intensities.shape[1]), dtype=float)
     for subset in np.unique(subsets):
